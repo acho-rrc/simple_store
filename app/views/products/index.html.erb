@@ -2,8 +2,7 @@
 <ul>
   <% @products.each do |p| %>
     <li>
-      <%= p.title %> - $<%= number_with_precision(p.price, precision: 2) %>
-      (Qty: <%= p.stock_quantity %>)
+      <%= p.title %> - $<%= number_with_precision(p.price, precision: 2) %> - Qty: <%= p.stock_quantity %>
     </li>
   <% end %>
 </ul>
